@@ -1,0 +1,247 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #2c2c2c;
+    font-family: poppins;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Links */
+a {
+    color: #ff5733;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cc4622;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(36, 36, 36, 0.8);
+    height: 8vh;
+    border-bottom: 1px solid #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+#mylogo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #e0e0e0;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list li a {
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-list li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff5733;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.nav-list li a:hover::after {
+    width: 100%;
+}
+
+/* Seção de Conteúdo */
+.first-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+    height: 80vh;
+    text-align: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    min-height: 600px;
+    padding-top: 8vh;
+}
+
+.textopage1 {
+    max-width: 600px;
+    text-align: left;
+}
+
+.header-image {
+    width: 400px;
+    height: auto;
+    display: flex;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    padding: 4rem;
+}
+
+.first-section>div h1 {
+    font-size: 4rem;
+    color: #e0e0e0;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
+
+strong {
+    color: #ff5733;
+}
+
+.first-section>div p {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+/* Sobre Mim */
+.second-section {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: 400px;
+}
+
+.second-section>div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.second-section>div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+}
+
+.title {
+    color: #ff6f00;
+}
+
+.second-section>div p {
+    max-width: 600px;
+    color: #b3b3b3;
+}
+
+/* Minhas experiências */
+.third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.third-section ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section ul li {
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.third-section ul li:hover {
+    color: #ff6f00;
+}
+
+/* Minhas metas */
+.fourth-section {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: 400px;
+}
+
+.fourth-section>div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.fourth-section>div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+}
+
+.title {
+    color: #ff6f00;
+}
+
+.fourth-section>div p {
+    max-width: 600px;
+    color: #b3b3b3;
+}
+
+/* Rodapé */
+footer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #242424;
+    border-top: 1px solid #333333;
+}
+footer > div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
